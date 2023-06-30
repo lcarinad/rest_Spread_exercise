@@ -25,3 +25,17 @@ const doubleAndReturnArgs = (arr, ...args) => [
   ...arr,
   ...args.map((n) => n * 2),
 ];
+//5️⃣slice and dice: For this section, write the following functions using rest, spread and refactor these functions to be arrow functions! Make sure that you are always returning a new array or object and not modifying the existing inputs.
+
+/**⓵ remove a random element in the items array
+and return a new array without that item. */
+
+// function removeRandom(items) {
+//   const newItems = [...items];
+//   newItems.pop();
+//   return newItems;
+// }
+const removeRandom = (items) => {
+  let randomIndex = Math.floor(Math.random() * items.length);
+  return [...items.slice(0, randomIndex), ...items.slice(randomIndex + 1)];
+};
