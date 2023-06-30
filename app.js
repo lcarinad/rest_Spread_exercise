@@ -39,3 +39,9 @@ const removeRandom = (items) => {
   let randomIndex = Math.floor(Math.random() * items.length);
   return [...items.slice(0, randomIndex), ...items.slice(randomIndex + 1)];
 };
+
+/** Return a new array with every item in array1 and array2. */
+
+const extend = (arr1, arr2) => {
+  return [...arr1, ...arr2];
+};
