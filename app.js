@@ -40,8 +40,16 @@ const removeRandom = (items) => {
   return [...items.slice(0, randomIndex), ...items.slice(randomIndex + 1)];
 };
 
-/** Return a new array with every item in array1 and array2. */
+/**② Return a new array with every item in array1 and array2. */
 
 const extend = (arr1, arr2) => {
   return [...arr1, ...arr2];
+};
+/**⓷ Return a new object with all the keys and values
+from obj and a new key/value pair */
+
+const addKeyVal = (obj, key, val) => {
+  let newObj = { ...obj };
+  newObj[key] = val;
+  return newObj;
 };
