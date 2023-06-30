@@ -53,3 +53,10 @@ const addKeyVal = (obj, key, val) => {
   newObj[key] = val;
   return newObj;
 };
+
+/**④ Return a new object with a key removed. */
+const removeKey = (obj, key) => {
+  let newObj = { ...obj };
+  delete newObj[key];
+  return newObj;
+};
