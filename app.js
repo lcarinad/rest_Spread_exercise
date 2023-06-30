@@ -60,3 +60,9 @@ const removeKey = (obj, key) => {
   delete newObj[key];
   return newObj;
 };
+
+/** Combine⓹ two objects and return a new object. */
+const combine = (obj1, obj2) => {
+  const bigObj = { ...obj1, ...obj2 };
+  return bigObj;
+};
