@@ -6,6 +6,4 @@
 //     return num % 2 === 0
 //   });
 // }
-const filterOutOdds = (...nums) => {
-  return nums.filter((num) => num % 2 === 0);
-};
+const filterOutOdds = (...nums) => nums.filter((num) => num % 2 === 0);
